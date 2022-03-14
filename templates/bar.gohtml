@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MEDRESE</title>
+</head>
+<body>
+
+<h1>Welcome to the  Medrese. What can I get you to drink?</h1>
+you have been logged.<br>
+{{if .First}}
+USER NAME {{.UserName}}<br>
+PASSWORD {{.Password}}<br>
+FIRST {{.First}}<br>
+LAST {{.Last}}<br>
+<h2><a href="/">main menu</a></h2>
+<h2><a href="/logout">logout</a></h2>
+{{else}}
+<h2><a href="/logout">signup</a></h2>
+{{end}}
+</body>
+</html>
